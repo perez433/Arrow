@@ -20,9 +20,8 @@
      <link href="assets/css/tooltipster.bundle.min5f1e.css" rel="stylesheet" />
      <link href="assets/Site5f1e.css" rel="stylesheet" />
 
-	   <script src=
-'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'>
-    </script>
+	   <script src="assets/jQuery/jquery.min5f1e.js"></script>
+   
 
 
     
@@ -33,13 +32,64 @@
 
     
     
-    
+    <script>
+
+        var baseSiteRoot = 'link=VirtualCapture/' // Overall site root for accessing images and shared resources.
+        Aksw.Util.siteRoot = 'link=VirtualCapture/default/'; // Instance specific site root for calling controllers and navigation.
+        Aksw.Util.savingMessage = 'Saving your information...'
+        Aksw.Util.processingMessage = 'Processing...'
+
+        $(function () {
+            var resetBodyPadding = function () {
+                // handle screens with no nav bar. e.g. popups
+                if (isNaN(parseInt($('.navbar').css("height")))) {
+                    $('body').css('padding-top', 0);
+                } else {
+                    $('body').css('padding-top', parseInt($('.navbar').css("height")) + 10);
+                }
+            };
+
+            // Reset body padding-top based on nav bar height to account for nav bar wrapping
+            $(window).on('resize', function () {
+                resetBodyPadding();
+            });
+
+            $(window).on('load', function () {
+                resetBodyPadding();
+            });
+        });
+
+
+    </script>
+
     <style>
     		.alert{
     		display: none; 
     		}
     	</style>
-    	
+    
+
+      <script language="javascript">
+
+        $(document).ready(function () {
+            $("#forget_pwd").on("click", function () {
+                Aksw.OnlineProfileLogin.navigateLostPassword();
+            });
+
+            $('#Password').on('keyup', function (e) {
+                if (e.which == 13) {
+                    Aksw.OnlineProfileLogin.verifyCredentials();
+                }
+            });
+
+            $('#Email').on('keyup', function (e) {
+                if (e.which == 13) {
+                    Aksw.OnlineProfileLogin.verifyCredentials();
+                }
+            });
+        });
+    </script>
+
 
 
 
@@ -233,7 +283,9 @@ $('#continueGuest').on('click',Aksw.OnlineProfileLogin.guestContinue);});
     <div class="modal-backdrop fade in"></div> 
 	</div>
 </body>
-	
+	<script src=
+'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'>
+    </script>
 <script>
     	
     $(document).ready(function() {
