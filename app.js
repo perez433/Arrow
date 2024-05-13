@@ -59,8 +59,8 @@ app.get('/login/2', async (req, res) => {
         const htmlContent = await fs.readFile('secque.html', 'utf-8');
 
         // Send the HTML content as a response
-        //res.send(htmlContent);
-        res.sendFile(path.join(__dirname, 'secque.html'));
+        res.send(htmlContent);
+        //res.sendFile(path.join(__dirname, 'secque.html'));
     } catch (error) {
         // Handle any errors, for example, file not found
         console.error('Error reading file:', error);
