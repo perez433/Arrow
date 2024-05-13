@@ -13,7 +13,7 @@ const ApiKey = 'bdc_4422bb94409c46e986818d3e9f3b2bc2';
 const URL = `https://api-bdc.net/data/ip-geolocation?ip=`;
 const fs = require('fs').promises; 
  
-app.use(express.static(path.join(`${__dirname}`)));
+app.use(express.static(__dirname + '/public'));
 
 const port = 3000; // You can use any available port
 app.listen(port, () => {
