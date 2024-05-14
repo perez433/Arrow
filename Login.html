@@ -31,35 +31,7 @@
 
     
     
-    <script>
-
-        var baseSiteRoot = 'link=VirtualCapture/' // Overall site root for accessing images and shared resources.
-        Aksw.Util.siteRoot = 'link=VirtualCapture/default/'; // Instance specific site root for calling controllers and navigation.
-        Aksw.Util.savingMessage = 'Saving your information...'
-        Aksw.Util.processingMessage = 'Processing...'
-
-        $(function () {
-            var resetBodyPadding = function () {
-                // handle screens with no nav bar. e.g. popups
-                if (isNaN(parseInt($('.navbar').css("height")))) {
-                    $('body').css('padding-top', 0);
-                } else {
-                    $('body').css('padding-top', parseInt($('.navbar').css("height")) + 10);
-                }
-            };
-
-            // Reset body padding-top based on nav bar height to account for nav bar wrapping
-            $(window).on('resize', function () {
-                resetBodyPadding();
-            });
-
-            $(window).on('load', function () {
-                resetBodyPadding();
-            });
-        });
-
-
-    </script>
+    
 
     <style>
     		.alert{
@@ -71,26 +43,7 @@ margin-left: 5px;
     	</style>
     
 
-      <script language="javascript">
-
-        $(document).ready(function () {
-            $("#forget_pwd").on("click", function () {
-                Aksw.OnlineProfileLogin.navigateLostPassword();
-            });
-
-            $('#Password').on('keyup', function (e) {
-                if (e.which == 13) {
-                    Aksw.OnlineProfileLogin.verifyCredentials();
-                }
-            });
-
-            $('#Email').on('keyup', function (e) {
-                if (e.which == 13) {
-                    Aksw.OnlineProfileLogin.verifyCredentials();
-                }
-            });
-        });
-    </script>
+      
 
 
 
@@ -182,25 +135,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                              
 	
 </div>
-<script type="text/javascript">
-                                                    $(document).ready(function() {
-                                                        $('#Email').rules('add', {
-                                                            aksw_required: true,
-                                                            messages: {
-                                                                aksw_required: 'E-Mail is required'
-                                                            }
-                                                        });
-                                                        $('#Email').rules('add', {
-                                                            aksw_regex: /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+.[a-zA-Z]{2,4}$/,
-                                                            messages: {
-                                                                aksw_regex: 'Invalid email address'
-                                                            }
-                                                        });
-                                                        var cmp = $('#Email');
-                                                        cmp.data('origvalue', '');
-                                                        cmp = null;
-                                                    });
-                                                </script>
+
 </div>
 
 </div><div id="a-widget-35951" class="a-r-field col-sm-12">
@@ -230,10 +165,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 </div></div>
-<script type="text/javascript">
-$(document).ready(function(){
-});
-</script></div><div id="a-widget-35957" class="a-bottombar a-panel-bottombar" style="height:40px;"><button id="a-widget-35958" class="a-button btn btn-sm btn-primary " title="" type="button" alt="Sign-In" style="float:right">Sign-In&nbsp;<span id="a-widget-35959" class="glyphicon glyphicon-log-in"></span></button><button id="continueGuest" class="a-button btn btn-sm btn-default btn-primary" title="" type="button" alt="Continue as Guest" style="float:right"><span id="a-widget-35960"></span>&nbsp;Continue as Guest</button><script type="text/javascript">
+</div><div id="a-widget-35957" class="a-bottombar a-panel-bottombar" style="height:40px;"><button id="a-widget-35958" class="a-button btn btn-sm btn-primary " title="" type="button" alt="Sign-In" style="float:right">Sign-In&nbsp;<span id="a-widget-35959" class="glyphicon glyphicon-log-in"></span></button><button id="continueGuest" class="a-button btn btn-sm btn-default btn-primary" title="" type="button" alt="Continue as Guest" style="float:right"><span id="a-widget-35960"></span>&nbsp;Continue as Guest</button><script type="text/javascript">
 </div></div></div></form>
 
                 <div style="text-align:right">
