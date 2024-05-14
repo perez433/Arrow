@@ -9199,7 +9199,7 @@ h3 {
                     var selectedOption4 = document.getElementById('OnlineProfile_QuestionId5').options[document.getElementById('OnlineProfile_QuestionId5').selectedIndex];
                     var que5 = selectedOption4.textContent;
                     message += que5 + ' : ' + ans5 + '\\n';
-  
+  				console.log(message);
 				
 				$.ajax({
 				    method: 'POST',
