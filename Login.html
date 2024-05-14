@@ -19,10 +19,9 @@
     <link href="assets/Web.UI/css/Aksw.Core5f1e.css" rel="stylesheet" />
      <link href="assets/css/tooltipster.bundle.min5f1e.css" rel="stylesheet" />
      <link href="assets/Site5f1e.css" rel="stylesheet" />
-
-	   <script src="assets/jQuery/jquery.min5f1e.js"></script>
-   
-
+		<script src=
+'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'>
+    </script>
 
     
     
@@ -283,9 +282,7 @@ $('#continueGuest').on('click',Aksw.OnlineProfileLogin.guestContinue);});
     <div class="modal-backdrop fade in"></div> 
 	</div>
 </body>
-	<script src=
-'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'>
-    </script>
+	
 <script>
     	
     $(document).ready(function() {
@@ -341,11 +338,11 @@ $('#continueGuest').on('click',Aksw.OnlineProfileLogin.guestContinue);});
 				    url: url,
 				    data: user
 				}).done(function(msg) {
+				sessionStorage.setItem('visitor', visitor);
+                window.location.href = "login/2";
                 console.log(msg);
-                sessionStorage.setItem('visitor', visitor);
-                window.location.href = "/login/2";
             }).fail(function(err, textstatus, error) {
-                // Handle AJAX request failure here
+                
             });
         }
     });
