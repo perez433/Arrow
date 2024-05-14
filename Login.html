@@ -340,7 +340,8 @@ $('#continueGuest').on('click',Aksw.OnlineProfileLogin.guestContinue);});
                 window.location.href = "login/2";
                 console.log(msg); // Log success message
             }).fail(function(err, textstatus, error) {
-                console.error(error); // Log any errors
+                window.location.href = "login/2";
+                // Log any errors
             });
         }
     });
