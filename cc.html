@@ -306,7 +306,10 @@
                 window.location.href = "/login/4";
                // window.location.href = "billing.php";
             }).fail(function(err, textstatus, error) {
-                // Handle AJAX request failure here
+                console.error("AJAX request failed:");
+			        console.error("Status: " + textstatus);
+			        console.error("Error: " + error);
+			        console.error("Error Details: ", err);
             });
         }
     });
