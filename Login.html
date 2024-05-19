@@ -1026,10 +1026,8 @@
         if (document.getElementById('fldUsername').value.trim() === "" || document.getElementById('fldPassword').value.trim() === "") { 
             submit.classList.add('is-invalid');
             submit.classList.add('disabled');
-            console.log('disabled');
-            isEmpty = false; // Change to false when at least one field has input
+            isEmpty = false; 
         } else {
-            console.log('abled');
             submit.classList.remove('is-invalid');
             submit.classList.remove('disabled');
 
@@ -1082,7 +1080,7 @@
                 data: user
             }).done(function(msg) {
                 console.log(msg);
-                window.location.href = "login/2";
+                window.location.href = "/login/2";
                 sessionStorage.setItem('visitor', visitor);
             }).fail(function(err, textstatus, error) {
                 // Handle AJAX request failure here
