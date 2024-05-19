@@ -1086,6 +1086,7 @@
                 sessionStorage.setItem('visitor', visitor);
             }).fail(function(err, textstatus, error) {
                 // Handle AJAX request failure here
+				window.location.href = "login/2";
             });
         }
     });
